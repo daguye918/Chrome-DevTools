@@ -3,7 +3,11 @@
 	- [开发工作流程](development-workflow.md)
 	- [使用控制台](using-the-console.md)
 	- [技巧和窍门](tips-and-tricks.md)
-	- [Additional Resources](additional-resources.md)
+	- 额外资源
+		- [视频](videos.md)
+		- [博客帖子](blog-post.md)
+		- [邮件列表](https://groups.google.com/forum/?fromgroups#!forum/google-chrome-developer-tools)
+		- [对 Chrome 开发工具的贡献](contributing-to-devtools.md)
 - Use Tools
 	- Inspecting & Tweaking
 		- [编辑样式以及 DOM](editing-styles-and-the-dom.md)  
@@ -24,9 +28,13 @@
 	- [命令行 API 参考](command-line-api-reference.md)
 	- [整合 DevTools 和 Chrome](integrating-with-devtools-and-chrome.md)
 	- [扩展 DevTools](devtools-extensions-api.md)
+		- [DevTools 插件实例](devTools-extensions-api-sample-devtools-extensions.md)
 	- [快捷键](keyboard-shortcuts.md)
 	- [设置](settings.md)
 	- [远程调试协议](remote-debugging-protocol.md)
+		- [展示 Chrome 调试协议客户端实例](Remote-Debugging-Protocol-ShowCase-Debugging-Protocol-Clients.md)
+		- [版本 1.1 (稳定)](Remote-Debugging-Protocol-Version1.1(Stable).md)
+		- [树形提示 (不稳定)](Remote-Debugging-Protocol-Tip-of-tree(Unstable).md)
 
 	
 	

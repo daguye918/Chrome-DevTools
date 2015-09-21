@@ -169,7 +169,7 @@ chromium-browser --remote-debugging-port=9222 --no-first-run --user-data-dir=~/t
 
 在这里您将看到关于每一个被监视页面的网格菜单。刷新后可以更新数据。
 
-![image00](./images/ctd-image01.png)
+![image00](./images/contributing-image01.png)
 
 这个网格菜单是的一个小型网络服务器端运行的，该服务器在 Canary 的第一个实例内，而 --remote-debugging-port=9222 参数会传递给该对象。自从Web服务器从您本地的 /blink/Source/devtools 目录下的 git repo 运行时，当点击相关页面时，devtools 文件夹下的全部文件都会被检查。  
 
@@ -181,7 +181,7 @@ chromium-browser --remote-debugging-port=9222 --no-first-run --user-data-dir=~/t
 
 现在，用你的键盘快捷键在窗口中打开工具。你现在已经成功建立检查器了。
 
-![image01](./images/ctd-image00_1.png)
+![image01](./images/contributing-image00_1.png)
 
 做得好。现在你可以开始[构建](http://dev.chromium.org/developers/contributing-code)和发展本地/blink/Source/devtools/front_end.目录下的 DevTools 前端代码了。 
 
