@@ -7,11 +7,11 @@
 ## $_
 返回最近一次计算过的表达式的值。在下面的例子中是一个简单的表达式求值。 $_ 属性会被计算，包含了和表达式相同的值：
 
-![last_expression.png](images/last_expression.png)
+![last_expression.png](images/ref_last_expression.png)
 
 在下面的例子中，会调用 $$() 方法来进行一个表达式的评估，这个方法会返回一组匹配 CSS 选择器的元素。这之后会给 $.length 评估来获取数组的长度(17),之后会变成最后执行的评估表达式。
 
-![last_expression_2_1](images/last_expression_2_1.png)
+![last_expression_2_1](images/ref_last_expression_2_1.png)
 
 
 ## $0 - $4
@@ -19,11 +19,11 @@ DevToos 记得你在该选项卡（或 Profiles 面板）已经选定过的最�
 
 在下面的例子中，ID 是 gc-sidebar 的元素在 Elemen 选项卡中被选中。在控制台窗口 $0 被执行计算，显示了相同的元素。
 
-![$0.png](images/$0.png)
+![$0.png](images/ref_$0.png)
 
 
 下图显示了在同一个页面中被选中的 `gc-sidebar ` 元素。$0 现在指向新选择的元素，而 $1 现在返回先前选定的那个元素（gc-sidebar）。
-![$1.png](images/$1.png)
+![$1.png](images/ref_$1.png)
 
 
 ## $(selector)
@@ -35,7 +35,7 @@ DevToos 记得你在该选项卡（或 Profiles 面板）已经选定过的最�
  $('img').src;
 ```
 
-![$img_src.png](images/$img_src.png)
+![$img_src.png](images/ref_$img_src.png)
 
 
 
@@ -48,7 +48,7 @@ DevToos 记得你在该选项卡（或 Profiles 面板）已经选定过的最�
  var images = $$('img');for (each in images) {    images[each].src;}
  ```
 
- ![$$img_src.png](images/$$img_src.png)
+ ![$$img_src.png](images/ref_$$img_src.png)
 
  ```
   注意：按 Shift+ 回车 在控制台输入一行新的脚本，但并立即执行。
@@ -62,7 +62,7 @@ DevToos 记得你在该选项卡（或 Profiles 面板）已经选定过的最�
  $x("//p[a]");
  ```
 
-![$xpath.png](images/$xpath.png)
+![$xpath.png](images/ref_$xpath.png)
 
 
 
@@ -92,7 +92,7 @@ clear()
  debuge(getData);
  ```
 
-![debug.png](images/debug.png)
+![debug.png](images/ref_debug.png)
 使用 [undebug(fn)](https://developer.chrome.com/devtools/docs/commandline-api#undebugfunction) 来恢复中断方法的执行，或者用 UI 界面来使断点失效。
 
 
@@ -107,7 +107,7 @@ clear()
  document.body;dir(document.body);
  ```
 
-![document.body.png](images/document.body.png)
+![document.body.png](images/ref_document.body.png)
 更多详情，请见 控制台 API的 [console.dir()](https://developer.chrome.com/devtools/docs/console-api#consoledirobject) 方法。
 
 
@@ -124,7 +124,7 @@ clear()
 inspect(document.body.firstChild);
 ```
 
-![inspect.png](images/inspect.png)
+![inspect.png](images/ref_inspect.png)
 
 当传递一个函数作为 inspect() 参数，如果这个函数被调用，就会为你在源面板中打开它让你进行检查。
 
@@ -136,14 +136,14 @@ inspect(document.body.firstChild);
  getEventListeners(document);
  ```
 
-![geteventlisteners_short.png](images/geteventlisteners_short.png)
+![geteventlisteners_short.png](images/ref_geteventlisteners_short.png)
 
 如果在一个指定对象中注册有超过一个监听器，这时这个数组包含了每一个监听器成员。例如在下面的例子里，两个注册在  `#scrollingList` 元素中的关于 "mousedown" 的事件监听器：
 
-![geteventlisteners_multiple.png](images/geteventlisteners_multiple.png)
+![geteventlisteners_multiple.png](images/ref_geteventlisteners_multiple.png)
 你可以进一步拓展这些对象来探索它们的属性：
 
-![geteventlisteners_expanded.png](images/geteventlisteners_expanded.png)
+![geteventlisteners_expanded.png](images/ref_geteventlisteners_expanded.png)
 
 ## keys(object)
 返回一个数组，包含了指定对象属性的名字。要获得相同的属性相关联的值，可以使用 `value()`。
@@ -156,7 +156,7 @@ inspect(document.body.firstChild);
 
 如果 player1 在全局空间中定义（为简单起见），在控制台中输入 <code>keys(player1)</code> 和 <code>values(player1)</code>会得到以下输出：
 
-![keys-values2.png](images/keys-values2.png)
+![keys-values2.png](images/ref_keys-values2.png)
 
 ## monitor(function)
 当这个方法被调用时，一个消息被输出到控制台，来表示函数名和函数被调用时传入的参数。
@@ -165,7 +165,7 @@ inspect(document.body.firstChild);
  function sum(x, y) {    return x + y;}monitor(sum);
 ```
 
-![monitor.png](images/monitor.png)
+![monitor.png](images/ref_monitor.png)
 
 使用 `unmonitor(function)` 来停止监视
 
@@ -178,7 +178,7 @@ inspect(document.body.firstChild);
  monitorEvents(window, "resize");
 ```
 
-![monitor-resize.png](images/monitor-resize.png)
+![monitor-resize.png](images/ref_monitor-resize.png)
 
 你也可以指定一个可用的事件 “types”，这些字符串映射到预定义的事件集合。下面的表列出了可用事件类型及其相关的事件映射：
 
@@ -195,7 +195,7 @@ inspect(document.body.firstChild);
  monitorEvents($("#msg"), "key");
  ```
 下面是在文本框中输入两个字符后输出示例：
-![monitor-key-events.png](images/monitor-key-events.png)
+![monitor-key-events.png](images/ref_monitor-key-events.png)
 
 
 ## profile([name])
@@ -229,7 +229,7 @@ inspect(document.body.firstChild);
  var names = {    0: { firstName: "John", lastName: "Smith" },
  1: { firstName: "Jane", lastName: "Doe" }};table(names);
  ```
-![table.png](images/table.png)
+![table.png](images/ref_table.png)
 
 ## undebug(function)
 停止指定函数的调试，使得当被调用的方法不再被调用。

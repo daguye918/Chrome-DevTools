@@ -8,7 +8,7 @@
 
 一个 DevTools 插件的结构像其他插件一样 : 它可以有一个后台页面,内容脚本和其他主体。此外,每个 DevTools 插件有一个 DevTools 页面,能访问到它的 DevTools API。
 
-![devtools-extension.png](images/devtools-extension.png)
+![devtools-extension.png](images/ref_devtools-extension.png)
 
 ## DevTools 页面 ##
 一个插件 DevTools 页面的实例每次随着 DevTools 窗口打开而被创建。DevTools 页面在 DevTools 窗口生命周期内存在。DevTools 页面能访问 DevTools API 和有限的一组扩展 API。具体来说，DevTools 页面可以:
@@ -49,7 +49,7 @@ DevTools 页面不能直接使用大多数的扩展 API。它可以访问扩展�
 + 面板是一个顶级标签，像元素（Elements），源（Sources）和网络（Network）板。
 + *侧边栏窗格* 显示补充 UI 相关的面板。固有样式，设定的样式以及元素 (Elements) 面板上的事件监听器窗格的都是侧边栏窗格的实例。目前你的插件只能在元素 (Elements) 面板加侧边栏窗格。 （请注意，侧边栏面板的外观可能与图像不匹配，这取决于你正在使用 Chrome 浏览器的版本和其中 DevTools 窗口停靠的位置。）
 
-![devtools-extension-ui.png](images/devtools-extension-ui.png)
+![devtools-extension-ui.png](images/ref_devtools-extension-ui.png)
 
 每个面板都是其自身的 HTML 文件，可以包括其它资源（JavaScript，CSS，图片，等等）。像这样创建一个基本的面板：
 

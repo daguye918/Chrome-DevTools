@@ -1,9 +1,9 @@
-# 设置
+# Settings
 修改 DevTools 中的设置
 
-+ 点击设置齿轮 ![gear.png](images/gear.png)，打开 General Settings 面板进行修改。或者，也可以使用快捷键 <kbd>？</kbd> 打开 Setting 窗格。
++ 点击设置齿轮 ![gear.png](images/ref_gear.png)，打开 General Settings 面板进行修改。或者，也可以使用快捷键 <kbd>？</kbd> 打开 Setting 窗格。
 
-![general-settings.png](images/general-settings.png)
+![general-settings.png](images/ref_general-settings.png)
 
 
 ## 通用设置
@@ -25,7 +25,7 @@
 #### 当它停向右边垂直拆分面板
 使用这个会改变面板的布局，使主部分被堆叠在侧栏部分的顶部。你会发现这是有用的，当他们并排侧栏是小屏幕的情况下是没有足够的水平空间的。
 
-![dock-to-right.png](images/dock-to-right.png)
+![dock-to-right.png](images/ref_dock-to-right.png)
 
 ### 元素（Elements）
 #### 颜色格式
@@ -34,18 +34,18 @@
 + RGB: <code>rgb(128, 255, 255)</code>
 + HSL: <code>hsl(300, 80%, 90%)</code>
 
-![color-format-settings.png](images/color-format-settings.png)
+![color-format-settings.png](images/ref_color-format-settings.png)
 
 **颜色格式（color format）**设置，可以让你控制颜色代码如何显示在元素面板的**样式边栏 （Styles Sidebar）**。除了为控制颜色代码格式设置选项，你还可以点击样式栏顶部的齿轮图标，来改变颜色代码的格式。
 
-![color-picker-format.png](images/color-picker-format.png)
+![color-picker-format.png](images/ref_color-picker-format.png)
 
 选择 **As authored** 将为样式表中定义的属性使用颜色格式。
 
 #### 显示用户代理样式（user agent styles)
 你可能会发现在元素面板的样式边栏显示的 **user agent style** 很有用。
 
-![show-user-agent-styles.png](images/show-user-agent-styles.png)
+![show-user-agent-styles.png](images/ref_show-user-agent-styles.png)
 
 **用户代理 (user agent)** 是指浏览器。每个浏览器实现了一个默认的样式表，包括基本的风格规则，在页面中应用到 DOM 元素。如果你曾经很难去除两个元素之间的空白，例如，它可能是因为用户代理样式表添加了默认 margin 或 padding 指向特定类型的元素的。
 
@@ -56,7 +56,7 @@
 有了[影子 DOM](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/)，元素可以得到一个与它们相关联的新节点。这个新节点被称为**阴影根（shadow root)**。具有与其相关联的阴影的根元素被称为阴影主机。阴影主机的子节点不会呈现;用阴影根的内容代替呈现。
 
 
-![show-shadow-dom.png](images/show-shadow-dom.png)
+![show-shadow-dom.png](images/ref_show-shadow-dom.png)
 
 + [Shadow DOM 201](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/)
 + [Shadow DOM 301](http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-301/)
@@ -67,13 +67,13 @@
 ####显示直尺
 这将显示一个沿着顶部，左侧和底部覆盖视口的标尺。
 
-![show-rulers.png](images/show-rulers.png)
+![show-rulers.png](images/ref_show-rulers.png)
 
 ### 源面板（Sources）
 #### 内容脚本搜索
 [内容脚本 (Content script)](http://developer.chrome.com/extensions/content_scripts.html) 是一些 JavaScript 文件，在 Chrome 插件中，插件运行在网页主体，但与普通网页的 JavaScript 是完全分离的，处于一个受保护的范围。这样，内容的脚本和页面脚本彼此不能以一个普通的方式进行交互。
 
-![search-content-scripts.png](images/search-content-scripts.png)
+![search-content-scripts.png](images/ref_search-content-scripts.png)
 
 当在 Sources 面板中观察内容脚本的标签，你会看到两个不同的脚本都是通过插件模块（或通过**用户脚本 User Script** 被编译成 Chrome 里的插件）被添加的，同样，内容脚本也被内置成为浏览器的一部分，特别是插件能够使用的 API 。
 
@@ -82,7 +82,7 @@
 #### 启用 JS 源映射（source maps）
 如果你的代码是级联的、简洁的，当你需要调试很难讲什么文件中的一段代码可能被调用。启用此设置，对于[调试 JavaScript](javascript-debugging.html#source-maps) 和与[一般的源映射活动](http://www.youtube.com/watch?v=HijZNR6kc9A#t=1m32s)是有用的。
 
-![js-source-maps.png](images/js-source-maps.png)
+![js-source-maps.png](images/ref_js-source-maps.png)
 
 #### 启用 CSS 源映射（source maps）
 式源映射用于使用预处理器（例 Sass）生成CSS文件。
@@ -117,7 +117,7 @@
 
 > 注意：这两种设置都可以通过右键点击控制台上进行更改。
 
-![console-right-click.png](images/console-right-click.png)
+![console-right-click.png](images/ref_console-right-click.png)
 ### 扩展
 
 打开链接：<code>a panel chosen automatically</code>
@@ -127,7 +127,7 @@
 
 要使用此功能，在设置面板中打开工作**空间选项卡 Workspaces tab**。在这里你会看到一个**添加文件夹链接 Add Folder**，允许你添加本地目录来编辑（如：项目根目录）。
 
-![workspace.png](images/workspace.png)
+![workspace.png](images/ref_workspace.png)
 
 一旦你添加一个文件夹目录，你就可以查看，编辑和保存任何时候你在 Sources 面板上编辑的文件。所有的文件更改将持续保存到包含在路径里的本地文件。
 

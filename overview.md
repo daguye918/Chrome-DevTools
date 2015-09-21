@@ -9,7 +9,7 @@ intl/en/chrome/browser/canary.html)。
 
 要使用开发工具，直接打开一个网页或者谷歌浏览器的一个网页应用。另一种方式：
 
-* 选择浏览器位于浏览器窗口右上方的菜单栏的**工具目录**![chrome-menu](./images/chrome-menu1.png)，选择**开发者工具选项**。
+* 选择浏览器位于浏览器窗口右上方的菜单栏的**工具目录**![chrome-menu](./images/chrome-devtools-chrome-menu1.png)，选择**开发者工具选项**。
 
 * 右击页面任何位置并选择**审查元素**。
 
@@ -27,7 +27,7 @@ intl/en/chrome/browser/canary.html)。
 ## 开发者工具窗口
 开发者工具窗口的顶部工具栏中排列着任务相关的组。每个工具栏项目和相应的面板让你能够使用网页或应用程序的特定信息来工作，包括 DOM 元素，资源，和源。
 
-![devtools-window](./images/devtools-window.png)
+![devtools-window](./images/chrome-devtools-devtools-window.png)
 
 图为开发者工具中的颜色选择器。
 
@@ -54,7 +54,7 @@ intl/en/chrome/browser/canary.html)。
 ## 查阅 DOM 和格式
 [元素面板](https://developer.chrome.com/devtools/docs/dom-and-styles)让你看到一个 DOM 树的全部相关信息，并允许你检查以及在传输过程中编辑 DOM 元素。当你需要确认页面某些方面的 HTML 代码段时，你会经常访问元素标签。例如，你对图像的 HTML id 属性和值是什么感到好奇的时候。
 
-![elements-panel](./images/elements-panel.png)
+![elements-panel](./images/chrome-devtools-elements-panel.png)
 
 在 DOM 中查看标题元素。
 
@@ -72,7 +72,7 @@ intl/en/chrome/browser/canary.html)。
 
 您可以直接在控制台中评估表达式，并使用[命令行提供的方法](https://developer.chrome.com/devtools/docs/commandline-api)。这些包括使用 [$()](https://developer.chrome.com/devtools/docs/commandline-api#selector) 命令选择元素或通过 [profile()](https://developer.chrome.com/devtools/docs/commandline-api#profilename) 方法启动 CPU 分析器命令。
 
-![expression-evaluation](./images/expression-evaluation.png)
+![expression-evaluation](./images/chrome-devtools-expression-evaluation.png)
 
 在 JS 控制台上评估一些命令。
 
@@ -81,7 +81,7 @@ intl/en/chrome/browser/canary.html)。
 ## JavaScript 的调试
 由于 JavaScript 应用程序**复杂性**的增加，开发商需要强大的调试工具来帮助开发者快速发现问题的原因和并找出有效的解决方法。Chrome 开发工具包含了一些有用的工具来使得**调试** JavaScript 更加轻松。
 
-![js-debugging](./images/js-debugging.png)
+![js-debugging](./images/chrome-devtools-js-debugging.png)
 
 一个在控制台输出日志的条件断点。
 
@@ -90,7 +90,7 @@ intl/en/chrome/browser/canary.html)。
 ## 提高网络性能
 **网络**面板提供了有关已经下载和加载过的资源的详细分析。在优化页面的基本过程中，确定和找到那些请求这一步通常要比预花费更多时间。
 
-![network-panel](./images/network-panel.png)
+![network-panel](./images/chrome-devtools-network-panel.png)
 
 网络请求的上下文菜单。
 
@@ -99,14 +99,14 @@ intl/en/chrome/browser/canary.html)。
 ## 审核
 审计面板可以像加载页面时那样分析一个页面。然后提供关于减少页面加载时间的建议和优化，以此提高感知（和真实）的响应。要进一步的了解该功能，我们推荐使用 [pagespeed](https://developers.google.com/speed/pagespeed/insights/) 。
 
-![audits-panel](./images/audits-panel.png)
+![audits-panel](./images/chrome-devtools-audits-panel.png)
 
 审计的建议。
 
 ## 提高渲染性能
 在加载和使用你的网页应用程序或网页时，**时间轴**面板给你关于时间开销的完整概述。包括从加载资源到解析 JavaScript，以及计算方式在内的所有事件，都会重新绘制在一个时间表中。
 
-![timeline-panel](./images/timeline-panel.png)
+![timeline-panel](./images/chrome-devtools-timeline-panel.png)
 
 一个有着多种时间的时间轴示例。
 
@@ -119,7 +119,7 @@ intl/en/chrome/browser/canary.html)。
 * **堆内存分配器** 显示页面的 JavaScript 对象和 DOM 节点。
 * **JavaScript** 配置文件会显示脚本的执行时间。
 
-![profiles-panel](./images/profiles-panel.png)
+![profiles-panel](./images/chrome-devtools-profiles-panel.png)
 
 堆快照的示例。
 
@@ -128,7 +128,7 @@ intl/en/chrome/browser/canary.html)。
 ## 监视存储
 **资源**面板允许你监视页面中加载的资源。它可以让你使用 HTML5 的本地存储，数据库，缓存，appcache，等。
 
-![resources-panel](./images/resources-panel.png)
+![resources-panel](./images/chrome-devtools-resources-panel.png)
 
 [Web Starter Kit](https://developers.google.com/web/tools/starter-kit/) 的 JavaScript 文件会显示在资源面板中。
 
@@ -149,19 +149,19 @@ intl/en/chrome/browser/canary.html)。
 
 您也可以在 [@chromiumdev](https://twitter.com/ChromiumDev) 上寻求我们的帮助或使用[论坛](https://groups.google.com/forum/?fromgroups#!forum/google-chrome-developer-tools)问个问题。
 
-![image13](./images/image13.png)
+![image13](./images/chrome-devtools-image13.png)
 
 在控制台中的样式输出。
 
 确定在 [Google+](https://plus.google.com/+GoogleChromeDevelopers/posts) 上检查谷歌浏览器开发页面。
 
-![chrome-devs-gplus](./images/chrome-devs-gplus.png)
+![chrome-devs-gplus](./images/chrome-devtools-chrome-devs-gplus.png)
 
 ### 参与
 
 提交一个bug错误或工具的特征请求，请在 [http://crbug.com](https://code.google.com/p/chromium/issues/list) 使用问题追踪。请同时提到“工具”的错误总结中。
 
-![crbug](./images/crbug.png)
+![crbug](./images/chrome-devtools-crbug.png)
 
 [crbug.com](https://code.google.com/p/chromium/issues/list) 的错误报告类选择器。
 

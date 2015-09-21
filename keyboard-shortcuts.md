@@ -4,7 +4,7 @@ DevTools 有许多内置快捷键，开发人员可以在他们的日常工作�
 ## 打开 DevTools
 要访问 DevTools，在谷歌 Chrome 浏览器里的任何网页或应用程序，你可以使用这些选项之一：
 
-+ 打开 Chrome 菜单![chrome-menu.png](images/chrome-menu.png)，在浏览器窗口的右上角，然后选择**工具 > 开发工具**。
++ 打开 Chrome 菜单![chrome-menu.png](images/ref_chrome-menu.png)，在浏览器窗口的右上角，然后选择**工具 > 开发工具**。
 + 在任何页面元素右键单击并选择**检查元素**。
 
 
@@ -17,7 +17,6 @@ DevTools 有许多内置快捷键，开发人员可以在他们的日常工作�
 | 检查（取消停靠第一个，然后按）|  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>  | <kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>I</kbd> |
 
 ## 所有面板
-
 | Windows  | Linux | Mac    |
 |------------------|:-------------------:|----------------|
 | 显示设置对话框 | <kbd>?</kbd>, <kbd>F1</kbd> | <kbd>?</kbd>  |
@@ -102,11 +101,11 @@ DevTools 有许多内置快捷键，开发人员可以在他们的日常工作�
 |关闭活动的标签 | <kbd>Alt  </kbd>  + <kbd>W  </kbd> |<kbd> Opt </kbd>   +<kbd> W</kbd>   |
 |运行代码片段 | <kbd>Ctrl </kbd>  + <kbd>Enter </kbd>  | <kbd> Cmd </kbd>  + <kbd>Enter  </kbd> |
 
-![pause-gray.png](images/pause-gray.png) 不能暂停异常
+![pause-gray.png](images/ref_pause-gray.png) 不能暂停异常
 
-![pause-blue.png](images/pause-blue.png) 暂停所有异常（包括那些被捕获 try / catch 块内）
+![pause-blue.png](images/ref_pause-blue.png) 暂停所有异常（包括那些被捕获 try / catch 块内）
 
-![pause-purple.png](images/pause-purple.png) 暂停未捕获的异常（通常是你想要的那个）
+![pause-purple.png](images/ref_pause-purple.png) 暂停未捕获的异常（通常是你想要的那个）
 
 ## 代码编辑器快捷键
 
@@ -120,7 +119,6 @@ DevTools 有许多内置快捷键，开发人员可以在他们的日常工作�
 |撤销最后的选择 |<kbd> Ctrl</kbd>   +<kbd> U  </kbd>  | <kbd>Cmd </kbd>  +<kbd>  U </kbd>   |
 
 ## TimeLine (时间轴)面板
-
 | Windows | Linux | Mac    |
 |------------------|:-------------------:|----------------|
 | 开始/停止记录 |  <kbd> Ctrl</kbd>  +<kbd>E </kbd>  | <kbd> Cmd</kbd>  +<kbd> E</kbd>   |
@@ -128,13 +126,11 @@ DevTools 有许多内置快捷键，开发人员可以在他们的日常工作�
 | 载入时间线数据 | <kbd>Ctrl </kbd>  +<kbd>O </kbd>  | <kbd>Cmd  </kbd>  +<kbd> O</kbd>   |
 
 ## Profiles 面板
-
 | Windows | Linux | Mac    |
 |------------------|:-------------------:|----------------|
 | 开始/停止记录 | <kbd> Ctrl</kbd>   +<kbd> E </kbd> | <kbd> Cmd</kbd>  + <kbd> E</kbd>  |
 
 ## Console(控制台)
-
 | Windows | Linux | Mac    |
 |------------------|:-------------------:|----------------|
 | 接受提示命令 | <kbd>键盘右  </kbd> | <kbd> 键盘右 </kbd>  |
@@ -154,23 +150,19 @@ DevTools 有许多内置快捷键，开发人员可以在他们的日常工作�
 
 
 ## 截屏
-
 | Windows | Linux | Mac    |
 |------------------|:-------------------:|----------------|
 | 放大缩小 | <kbd> Alt</kbd> + <kbd> Scroll</kbd> ,<kbd>Ctrl </kbd>  +<kbd>Click  and drag with two fingers </kbd>  | <kbd>Opt </kbd> + <kbd>Scroll </kbd> ,<kbd>Cmd  </kbd>   +<kbd> Click and drag with two fingers </kbd> |
 |检查元素的工具| <kbd> Ctrl</kbd>  + <kbd>Shift </kbd>  +<kbd>  C</kbd>  | <kbd> Cmd</kbd>  + <kbd>Shift </kbd>  +<kbd>  C</kbd> |
 
 ## 调试
-
 ## Console(控制台)
-
 | Windows | Linux | Mac    |
 |------------------|:-------------------:|----------------|
 | 放大缩小 | <kbd>Shift </kbd>  + <kbd>Scroll  </kbd>  | <kbd>Shift </kbd>  + <kbd>Scroll </kbd>  |
 
 
 ## Chrome 的其他快捷键
-
 这里有一些其他的 Chrome 快捷键，这些都浏览器通用的快捷键，并不是 DevTools 内的特有的。查看适用于Windows，Mac 和 Linux的Chrome 的[所有快捷键](http://goo.gl/PsTNm)。
 
 | Windows | Linux | Mac    |

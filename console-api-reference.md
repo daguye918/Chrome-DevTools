@@ -9,7 +9,7 @@
  console.assert(list.childNodes.length < 10, "List item count is >= 10");
  ```
 
-![assert-failed-list.png](images/assert-failed-list.png)
+![assert-failed-list.png](images/ref_assert-failed-list.png)
 
 ## console.clear()
 清除控制台
@@ -32,7 +32,7 @@ console.clear();
 function login(user) {    console.count("Login called");    // login() code...}
 ```
 
-![count.png](images/count.png)
+![count.png](images/ref_count.png)
 
 在这个例子中，<code>count()</code> 在不同的标签里被调用，每次返回结果都是单独增加（不会累加）。
 
@@ -40,7 +40,7 @@ function login(user) {    console.count("Login called");    // login() code...}
 function login(user) {    console.count("Login called for user '" +  user + "'");    // login() code...}
 ```
 
-![count-unique.png](images/count-unique.png)
+![count-unique.png](images/ref_count-unique.png)
 
 
 ## console.debug(object [, object, ...])
@@ -55,7 +55,7 @@ function login(user) {    console.count("Login called for user '" +  user + "'")
 console.dir(document.body);
 ```
 
-![consoledir-body.png](images/consoledir-body.png)
+![consoledir-body.png](images/ref_consoledir-body.png)
 
 你也可以在一个 <code>console.log()</code>语句中使用对象制式（%0）来输出一个元素的 JavaScript 属性：
 
@@ -63,7 +63,7 @@ console.dir(document.body);
 console.log("document body: %O", document.body);
 ```
 
-![consolelog-object-formatter.png](images/consolelog-object-formatter.png)
+![consolelog-object-formatter.png](images/ref_consolelog-object-formatter.png)
 
 在 JavaScript 对象上调用 <code>console.dir()</code> 同在相同对象上调用 console.log() 是等效的。他们都以树的形式输出对象的 Javascript 属性。
 
@@ -73,7 +73,7 @@ console.log("document body: %O", document.body);
 console.log(document.body);
 ```
 
-![consolelog-body.png](images/consolelog-body.png)
+![consolelog-body.png](images/ref_consolelog-body.png)
 
 ## console.dirxml(object)
 
@@ -95,7 +95,7 @@ function connectToServer() {    var errorCode = 1;    if (errorCode) {        co
 ```
 
 
-![error-server-not-resp.png](images/error-server-not-resp.png)
+![error-server-not-resp.png](images/ref_error-server-not-resp.png)
 
 ## console.group(object[, object, ...])
 
@@ -105,7 +105,7 @@ function connectToServer() {    var errorCode = 1;    if (errorCode) {        co
 console.group("Authenticating user '%s'", user);console.log("User authenticated");console.groupEnd();
 ```
 
-![log-group-simple.png](images/log-group-simple.png)
+![log-group-simple.png](images/ref_log-group-simple.png)
 
 你也可以嵌套组：
 
@@ -113,7 +113,7 @@ console.group("Authenticating user '%s'", user);console.log("User authenticated"
 // New group for authentication:console.group("Authenticating user '%s'", user);// later...console.log("User authenticated", user);// A nested group for authorization:console.group("Authorizing user '%s'", user);console.log("User authorized");console.groupEnd();console.groupEnd();
 ```
 
-![nestedgroup-api.png](images/nestedgroup-api.png)
+![nestedgroup-api.png](images/ref_nestedgroup-api.png)
 
 ## console.groupCollapsed(object[, object, ...])
 
@@ -122,7 +122,7 @@ console.group("Authenticating user '%s'", user);console.log("User authenticated"
 ```javascript
 console.groupCollapsed("Authenticating user '%s'", user);console.log("User authenticated");console.groupEnd();console.log("A group-less log trace.");
 ```
-![groupcollapsed.png](images/groupcollapsed.png)
+![groupcollapsed.png](images/ref_groupcollapsed.png)
 
 
 
@@ -161,7 +161,7 @@ console.log("App started");
 console.log("User %s has %d points", userName, userPoints);
 ```
 
-![log-format-specifier.png](images/log-format-specifier.png)
+![log-format-specifier.png](images/ref_log-format-specifier.png)
 
 下面是一个在相同 DOM 元素中使用元素格式 (%o) 和对象格式 (%0) 的例子：
 
@@ -170,7 +170,7 @@ console.log("%o, %O", document.body, document.body);
 ```
 
 
-![log-object-element.png](images/log-object-element.png)
+![log-object-element.png](images/ref_log-object-element.png)
 
 下面的示例使用 %c 格式说明上色的输出字符串：
 
@@ -179,7 +179,7 @@ console.log("%cUser %s has %d points", "color:orange; background:blue; font-size
 ```
 
 
-![log-format-styling.png](images/log-format-styling.png)
+![log-format-styling.png](images/ref_log-format-styling.png)
 
 
 ## console.prifile([label])
@@ -211,7 +211,7 @@ console.time("Array initialize");var array= new Array(1000000);for (var i = arra
 ```
 
 
-![time-duration.png](images/time-duration.png)
+![time-duration.png](images/ref_time-duration.png)
 
 > 注意：传递给 time() 和 timeEnd() 方法的字符串必须与定时器预期的结束返回的值相符。
 
@@ -232,12 +232,12 @@ console.time("Array initialize");var array= new Array(1000000);for (var i = arra
 输出从这个方法被调用的那个点的栈追踪路径，包括在 Javascript 源代码中指向特定行的链接。计数器输出 <code>trace()</code>方法在那个点被调用的次数，如下图屏幕显示的一样。
 
 
-![console-trace.png](images/console-trace.png)
+![console-trace.png](images/ref_console-trace.png)
 
 向 <code>trace</code>中传入参数也是可能的，例如：
 
 
-![console-trace-args.png](images/console-trace-args.png)
+![console-trace-args.png](images/ref_console-trace-args.png)
 
 
 ## console.warn(object [, object, ...])
@@ -248,7 +248,7 @@ console.time("Array initialize");var array= new Array(1000000);for (var i = arra
 console.warn("User limit reached! (%d)", userPoints);
 ```
 
-![log-warn.png](images/log-warn.png)
+![log-warn.png](images/ref_log-warn.png)
 
 ## debugger
 
@@ -262,7 +262,7 @@ console.warn("User limit reached! (%d)", userPoints);
 brightness : function() {    debugger;    var r = Math.floor(this.red*255);    var g = Math.floor(this.green*255);    var b = Math.floor(this.blue*255);    return (r * 77 + g * 150 + b * 29) >> 8;}
 ```
 
-![debugger.png](images/debugger.png)
+![debugger.png](images/ref_debugger.png)
 
 
 
