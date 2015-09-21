@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 
 # 使用控制台
 
+=======
+# 使用控制台
+
+>>>>>>> origin/master
 利用控制台可以让你：
 
 * 日志诊断信息可以帮你分析 web 页面或者应用上的错误
@@ -15,14 +20,24 @@
 Javascript 控制台可以在两个地方打开。控制台面板是主要的进入点。它同样也可以在其他任何面板中通过使用抽屉来打开。打开控制面板，用下面的选择下面提供的一种方式：
 
 * 使用键盘快捷键 `Command` + `Option` + `J`（Mac） 或者 `Control` + `Shitf` + `J`（Windows/Linux）。
+<<<<<<< HEAD
 * 选择 ![chrome-menu](./images/using-the-console-chrome-menu.png) > More Tools > JavaScript Console.
 
 ![console1](./images/using-the-console-console1.png)
+=======
+* 选择 ![chrome-menu](images/utc-chrome-menu.png) > More Tools > JavaScript Console.
+
+![console1](images/utc-console1.png)
+>>>>>>> origin/master
 一个干净的控制台界面
 
 要打开抽屉式控制台，你需要在键盘上按下 `Esc` 键或者点击开发者工具窗口右上角的 Show Drawer 按钮。
 
+<<<<<<< HEAD
 ![console-in-drawer](./images/using-the-console-console-in-drawer.png)
+=======
+![console-in-drawer](images/utc-console-in-drawer.png)
+>>>>>>> origin/master
 在元素面板上的抽屉式控制台
 
 ### 清除控制台历史信息
@@ -40,7 +55,11 @@ Javascript 控制台可以在两个地方打开。控制台面板是主要的进
 
 | 禁止时间戳（默认）| 允许时间戳 |
 | -------------- | --------- |
+<<<<<<< HEAD
 | ![timestamps-disabled](./images/using-the-console-timestamps-disabled.png) | ![timestamps-enabled](./images/using-the-console-timestamps-enabled.png)
+=======
+| ![timestamps-disabled](images/utc-timestamps-disabled.png) | ![timestamps-enabled](images/utc-timestamps-enabled.png)
+>>>>>>> origin/master
 两种栈状态的例子
 
 测试控制台模式的简单代码
@@ -55,10 +74,17 @@ for (i = 0; i < 20; i++) console.log(msgs[Math.floor((i/3)%3)])
 
 控制台可以在页面的不同帧中运行。主页是文档的最外层帧。以 **iframe** 元素为例，它将会创造出它自己的上下文框架。你也可以通过使用在过滤按钮旁边的下拉框来指定这个帧。
 
+<<<<<<< HEAD
 ![frame-selection](./images/using-the-console-frame-selection.png)
 选择一个次要的帧
 
 ![locations-between-frames](./images/using-the-console-locations-between-frames.png)
+=======
+![frame-selection](images/utc-frame-selection.png)
+选择一个次要的帧
+
+![locations-between-frames](images/utc-locations-between-frames.png)
+>>>>>>> origin/master
 这张图片展示了窗口源在顶级帧和选中的次要帧中改变。
 
 ## 使用控制台 API
@@ -79,7 +105,11 @@ console.log("Node count: " + a.childNodes.length);
 
 ```
 
+<<<<<<< HEAD
 ![log-basic](./images/using-the-console-log-basic.png)
+=======
+![log-basic](images/utc-log-basic.png)
+>>>>>>> origin/master
 一个在控制台中输出的例子
 
 多个参数会串联到有限行中。
@@ -91,7 +121,11 @@ console.log("Node count:", a.childNodes.length, "and the current time is:", Date
 
 ```
 
+<<<<<<< HEAD
 ![log-multiple](./images/using-the-console-log-multiple.png)
+=======
+![log-multiple](images/utc-log-multiple.png)
+>>>>>>> origin/master
 多重参数的 console.log() 的输出。
 
 ### 错误和警告
@@ -110,7 +144,11 @@ connectToServer();
 
 ```
 
+<<<<<<< HEAD
 ![error-server-not-resp](./images/using-the-console-error-server-not-resp.png)
+=======
+![error-server-not-resp](images/utc-error-server-not-resp.png)
+>>>>>>> origin/master
 
 **connectToServer()** 如何在控制台中显示。
 
@@ -123,7 +161,11 @@ if(a.childNodes.length < 3 ) {
 
 ```
 
+<<<<<<< HEAD
 ![warning-too-few-nodes](./images/using-the-console-warning-too-few-nodes.png)
+=======
+![warning-too-few-nodes](images/utc-warning-too-few-nodes.png)
+>>>>>>> origin/master
 警告输出的例子。
 
 ### 断言
@@ -139,7 +181,11 @@ console.assert(list.childNodes.length < 500, "Node count is > 500");
 
 ```
 
+<<<<<<< HEAD
 ![assert-failed](./images/using-the-console-assert-failed.png)
+=======
+![assert-failed](images/utc-assert-failed.png)
+>>>>>>> origin/master
 一个失败断言如何在控制台中显示。
 
 ### 过滤控制台的输出
@@ -154,7 +200,11 @@ console.assert(list.childNodes.length < 500, "Node count is > 500");
 | **Logs**		|只显示 console.log() 输出的信息 |
 | **Debug**		|只显示 console.timeEnd() 和 console.debug() 输出的信息 |
 
+<<<<<<< HEAD
 ![filter-errors](./images/using-the-console-filter-errors.png)
+=======
+![filter-errors](images/utc-filter-errors.png)
+>>>>>>> origin/master
 过滤器只显示错误级别的信息。
 
 ### 输出分组
@@ -179,7 +229,11 @@ console.groupEnd();
 
 示例输出
 
+<<<<<<< HEAD
 ![group](./images/using-the-console-group.png)
+=======
+![group](images/utc-group.png)
+>>>>>>> origin/master
 
 日志信息的分组可能还会相互嵌套，这对于在一个狭小空间一次性看大量信息来说非常有用。
 
@@ -207,7 +261,11 @@ console.log("A group-less log trace.");
 
 ```
 
+<<<<<<< HEAD
 ![nestedgroup](./images/using-the-console-nestedgroup.png)
+=======
+![nestedgroup](images/utc-nestedgroup.png)
+>>>>>>> origin/master
 控制台中的嵌套分组输出信息。
 
 当你对输出信息进行多次分组以后，你就不用直接看到全部的输出信息了，这是非常有用的。你可以通过调用 <a href="https://developer.chrome.com/devtools/docs/console-api#consolegroupcollapsed">groupCollapsed()</a>，代替之前使用的 **group()** 来自动为信息分组。
@@ -225,7 +283,11 @@ console.groupEnd();
 
 ```
 
+<<<<<<< HEAD
 ![groupcollapsed](./images/using-the-console-groupcollapsed.png)
+=======
+![groupcollapsed](images/utc-groupcollapsed.png)
+>>>>>>> origin/master
 groupCollapsed() 输出信息
 
 ### 浏览结构化数据
@@ -244,7 +306,11 @@ console.table([[1,2,3], [2,3,4]]);
 
 输出的示例代码的结果：
 
+<<<<<<< HEAD
 ![table-arrays](./images/using-the-console-table-arrays.png)
+=======
+![table-arrays](images/utc-table-arrays.png)
+>>>>>>> origin/master
 
 **table()** 中的第二个参数是可选项。你可以定义任何你想显示的属性字符串数组。
 
@@ -271,7 +337,11 @@ console.table(family, ["firstName", "lastName", "age"]);
 
 示例代码的输出:
 
+<<<<<<< HEAD
 ![table-people-objects](./images/using-the-console-table-people-objects.png)
+=======
+![table-people-objects](images/utc-table-people-objects.png)
+>>>>>>> origin/master
 
 ### 字符串的替换和格式化
 
@@ -318,7 +388,11 @@ console.log("%s has %d points", "Sam", 100);
 
 | log() 视图 |  dir() 视图 |
 | -------|-------- |
+<<<<<<< HEAD
 | ![log-element](./images/using-the-console-log-element.png)  | ![dir-element](./images/using-the-console-dir-element.png) |
+=======
+| ![log-element](images/utc-log-element.png)  | ![dir-element](images/utc-dir-element.png) |
+>>>>>>> origin/master
 
 ### 使用 CSS 样式来更改控制台输出形式
 
@@ -333,7 +407,11 @@ console.log("%cThis will be formatted with large, blue text", "color: blue; font
 
 ```
 
+<<<<<<< HEAD
 ![format-string](./images/using-the-console-format-string.png)
+=======
+![format-string](images/utc-format-string.png)
+>>>>>>> origin/master
 示例代码的输出结果。
 
 ### 计算时间开销
@@ -356,11 +434,19 @@ console.timeEnd("Array initialize");
 
 在控制台上的输出结果：
 
+<<<<<<< HEAD
 ![time-duration](./images/using-the-console-time-duration.png)
 
 当 time() 方法正在执行期间，将会生成一个 <a href="https://developer.chrome.com/devtools/docs/timeline">时间轴</a> 记录并为其做出注解。这对于追踪应用的使用以及其来源非常有用。
 
 ![time-annotation-on-timeline](./images/using-the-console-time-annotation-on-timeline.png)
+=======
+![time-duration](images/utc-time-duration.png)
+
+当 time() 方法正在执行期间，将会生成一个 <a href="https://developer.chrome.com/devtools/docs/timeline">时间轴</a> 记录并为其做出注解。这对于追踪应用的使用以及其来源非常有用。
+
+![time-annotation-on-timeline](images/utc-time-annotation-on-timeline.png)
+>>>>>>> origin/master
 time() 执行时间轴上的注解是如何显示的。
 
 ### 制作时间轴
@@ -388,7 +474,11 @@ function AddResult(name, result) {
 
 ```
 
+<<<<<<< HEAD
 ![timestamp2](./images/using-the-console-timestamp2.png)
+=======
+![timestamp2](images/utc-timestamp2.png)
+>>>>>>> origin/master
 时间轴中的时间戳
 
 ### 在 JavaScript 中设置断点
@@ -412,7 +502,11 @@ brightness : function() {
 
 示例代码的输出：
 
+<<<<<<< HEAD
 ![debugger](./images/using-the-console-debugger.png)
+=======
+![debugger](images/utc-debugger.png)
+>>>>>>> origin/master
 
 ### 记录语句的执行
 
@@ -443,7 +537,11 @@ login(users[0]);
 
 示例代码使出的内容：
 
+<<<<<<< HEAD
 ![console-count](./images/using-the-console-console-count.png)
+=======
+![console-count](images/utc-console-count.png)
+>>>>>>> origin/master
 
 ## 使用命令行 API
 
@@ -459,7 +557,11 @@ login(users[0]);
 
 当你按下 `Enter`  的时候，控制台将会计算任何你提供的 JavaScript 表达式。有两种完成方式，一种是全自动，一种是使用tab。只要你输入一个表达式，就会提供名称提示。如果有多个匹配的选项，使用 `↑` 和 `↓` 来在它们之间循环。按下 `→` 将会选择当前的选项。如果只有一个选项，按下 `Tab` 键也会选中当前的选项。
 
+<<<<<<< HEAD
 ![evaluate-expressions](./images/using-the-console-evaluate-expressions.png)
+=======
+![evaluate-expressions](images/utc-evaluate-expressions.png)
+>>>>>>> origin/master
 一些示例表达式在控制台的显示
 
 ### 选择元素
@@ -532,7 +634,11 @@ profileEnd()
 
 示例检测：
 
+<<<<<<< HEAD
 ![profile-panel](./images/using-the-console-profile-panel.png)
+=======
+![profile-panel](images/utc-profile-panel.png)
+>>>>>>> origin/master
 
 如果你提供了一个标签，该标签会被当做标题。如果你创建了多个配置文件，并且它们用的是同一个标签，那么它们将会被分到统一组下。
 
@@ -547,7 +653,11 @@ profileEnd("init")
 
 在配置面板上的结果：
 
+<<<<<<< HEAD
 ![profile-panel-2](./images/using-the-console-profile-panel-2.png)
+=======
+![profile-panel-2](images/utc-profile-panel-2.png)
+>>>>>>> origin/master
 
 多个 CPU 配置文件可以同时操作。并且，你不需要按照创建顺序关闭它们。
 
